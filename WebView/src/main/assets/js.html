@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Carson</title>
+        <script>
+
+            function callJS(msg){
+                alert('Android调用了JS的callJS方法，参数：'+msg);
+            }
+
+            function callAndroid(msg){
+            // 由于对象映射，所以调用test对象等于调用Android映射的对象
+                test.foo(msg);
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <button type="button" id="button1" onclick="callAndroid('Hello Android from JS')" style="width:200px;height:40px">点我调用Android方法</button>
+    </body>
+</html>
