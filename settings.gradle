@@ -1,1 +1,1 @@
-include ':WebView',':JNI'
+include ':WebView',':JNI',':AIDLclient','AIDLserver'
