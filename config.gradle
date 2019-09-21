@@ -4,10 +4,11 @@ ext {
     buildToolsVer       = '28.0.3'
     minSdkVer           = 21
     targetSdkVer        = 28
-    supportVer          = '28.0.0'
+    appcompatVer        = '1.1.0'
     constraintVer       = '1.1.3'
     gradleVer           = '3.5.0'
     junitVer            = '4.12'
-    runnerVer           = '1.0.2'
-    espressoVer        = '3.0.2'
+    runnerVer           = '1.2.0'
+    espressoVer         = '3.2.0'
+    recyclerviewVer     = '1.0.0'
     }

@@ -22,7 +22,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.android.support:appcompat-v7:$supportVer"
-    implementation "com.android.support:recyclerview-v7:$supportVer"
-    implementation "com.android.support.constraint:constraint-layout:$constraintVer"
+    implementation "androidx.appcompat:appcompat:$appcompatVer"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintVer"
+    implementation "androidx.recyclerview:recyclerview:$recyclerviewVer"
 }
