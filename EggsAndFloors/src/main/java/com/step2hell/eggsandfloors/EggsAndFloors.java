@@ -23,15 +23,19 @@ public class EggsAndFloors {
 
         // did my utmost to make it simple & clear, catch me if you can:)
         // here we go..
-        double ln2 = Math.log(2);
         for (int f = 0; f < floors; f++) {
-            int t = (int) Math.floor(Math.log(f + 1) / ln2) + 1;
+            int t = 0;
             for (int e = 0; e < eggs; e++) {
                 if (f == 0 || e == 0) {
                     times[f][e] = f + 1;
                     continue;
                 }
-                if (e + 1 >= t) {
+                if (t > 0) {
+                    times[f][e] = t;
+                    continue;
+                }
+                if (1 << (e + 1) > (f + 1)) {
+                    t = e + 1;
                     times[f][e] = t;
                     continue;
                 }
