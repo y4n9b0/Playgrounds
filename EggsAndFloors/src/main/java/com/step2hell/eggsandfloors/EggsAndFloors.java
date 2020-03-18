@@ -34,7 +34,7 @@ public class EggsAndFloors {
                     times[f][e] = t;
                     continue;
                 }
-                if (1 << (e + 1) > (f + 1)) {
+                if ((f + 1) >> (e + 1) < 1) {
                     t = e + 1;
                     times[f][e] = t;
                     continue;
