@@ -1,1 +1,1 @@
-include ':WebView',':JNI',':AIDLclient', ':FactoryPatten', ':SQLite', ':Sort', ':EggsAndFloors', ':RandomMyName', 'AIDLserver'
+include ':WebView',':JNI',':AIDLclient', ':FactoryPatten', ':SQLite', ':Sort', ':EggsAndFloors', ':RandomMyName', 'AIDLserver', 'Contract'
